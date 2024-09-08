@@ -1,0 +1,123 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-bottom: 4rem;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.container .form{
+  padding: 1rem 2rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+ .form input{
+   height: 40px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 0.8rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+ .form-control{
+    height: 40px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+.form a{
+  font-size: 16px;
+  color: #006400;
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.get-started-btn {
+  padding: 15px 30px;
+  background-color: #006400; /* Green background */
+  color: white; /* White text */
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background-color 0.3s;
+}
+.get-started-btn:hover {
+  background-color: #ff8c00; /* Darker yellow on hover */
+}
+
+.dept-label{
+    color: #006400;
+    font-weight: 700;
+}
+.login{
+  align-items: center;
+  padding-left: 4rem;
+}
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.file-upload input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.file-upload input[type="file"] {
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  margin-top: 0px;
+}
+
+
+.upload-icon {
+  height: 50px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.file-upload{
+  align-items: baseline;
+  display: block;
+}

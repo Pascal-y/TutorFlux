@@ -1,0 +1,146 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input{
+            height: 40px;
+        }
+
+        .form header {
+            font-size: 24px;
+            margin-bottom: 80px;
+            text-align: center;
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+        }
+
+        .file-upload {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .file-upload input[type="file"] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    .upload-icon {
+        height: 50px;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .dropdown-container {
+            margin-bottom: 15px;
+        }
+
+        .dropdown button {
+            background-color: white;
+            color: #343a40;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            height: 40px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f8f9fa;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 100%;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+        }
+
+        .dropdown-content label {
+            display: block;
+            padding: 0px 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-content label input {
+            margin-right: 10px;
+        }
+
+        .dropdown-content label:hover {
+            background-color: #dee2e6;
+        }
+
+        .dropdown-container.open .dropdown-content {
+            display: block;
+        }
+
+        .get-started-btn {
+            background-color: #006400;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .get-started-btn:hover {
+            background-color: #ff8c00;
+        }
+
+        .login {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .login a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login a:hover {
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .form header {
+                font-size: 20px;
+            }
+
+            .get-started-btn {
+                font-size: 14px;
+            }
+        }
+    
