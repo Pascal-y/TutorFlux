@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.hero-section {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: black;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.features-section {
+    padding: 50px 0;
+}
+
+.testimonial-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+img {
+    border-radius: 4px;
+    height: 223px;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    padding: 15px 30px;
+    background-color: #006400;
+    /* Green background */
+    color: white;
+    /* White text */
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: #ff8c00;
+    /* Darker yellow on hover */
+}
+
+nav {
+    background-color: #ff8c00;
+    height: 80px;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-color: #007bff;
+}
+
+.search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0 15px;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.search-button:hover {
+    color: #0056b3;
+}
+
+.search-button:focus {
+    outline: none;
+}

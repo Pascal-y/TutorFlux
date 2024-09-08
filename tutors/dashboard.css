@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-right: 240px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.main-section {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.sidebar {
+    width: 240px;
+    height: 480px;
+    background-color: #143D59;
+    color: #fff;
+    padding: 1rem;
+    overflow-y: auto;
+    font-size: 16px;
+    padding: 20px 20px;
+
+    .profile{
+        margin-left: 60px;
+
+        h5{
+            margin: 4px 0px 4px -20px;
+        }
+    }
+    a{
+        font-size: 16px;
+        margin: auto 20px;
+
+        i{
+            margin-right: 6px;
+        }
+    }
+}
+
+.sidebar ul {
+    list-style: none;
+    background-color: #143D59;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #fff;
+    overflow-y: auto;
+    align-items: center;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+footer {
+    background-color: #143D59;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    flex-shrink: 0;
+}
+.navbar-toggler{
+    visibility: hidden;
+}
+
+.profile-container{
+    background-color: #143D59;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px 30px;
+    color: white;
+    max-width: 1200px;
+    margin-left: 20px;
+    align-content: center;
+    display: flex;
+    flex: 2;
+    gap: 4rem;
+
+    .right{
+        margin: 20px;
+    }
+
+    p{
+        padding: 8px;
+    }
+
+    .profile-pic{
+        height: 100px;
+        width: 100px;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin: 20px 60px;
+
+
+    }
+    span{
+        margin-left: 60px;
+    }
+    .edit-btn{
+        height: 30px;
+        width: 30px;
+        padding: 6px;
+        font-size: 14px;
+        color: white;
+        background-color: #ff8c00;
+        border: none;
+        border-radius: 50%;
+        margin: 200px 0px 0px 160px;
+    }
+    .right p {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .right strong {
+        width: 140px; /* Adjust the width to align with your needs */
+    }
+    
+    .right span {
+        flex-grow: 1; /* Span will take the remaining space */
+    }
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #143D59;
+    color: white;
+    font-size: 12px;
+}
+
+.booking-container{
+    border-radius: 8px;
+    overflow: hidden; 
+    padding: 8px;
+}
+
+table,
+th,
+td {
+    border: 0.1px solid gray;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border: 0.1px solid gray;
+}
+th{
+    background-color: #ff9800;
+    font-size: 12px;
+    height: 50px;
+}
+
+.tutor_pic {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.reject-btns, .approve-btns {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.delete-btns {
+    background-color: #f44336;
+}
+
+.reject-btns {
+    background-color: #ff9800;
+}
+
+@media (max-width: 956px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: none;
+    }
+
+    .sidebar.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    .profile-container{
+        max-width: 600px;
+        display: block;
+    
+    
+        .profile-pic{
+            margin: 20px 100px;
+        }
+        .edit-btn{
+            margin: 40px 0px 0px 380px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: none;
+    }
+
+    .sidebar.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    .profile-container{
+        margin-top: 0px;
+        padding: 10px;
+        margin-left: 0px;
+
+    
+    
+        .profile-pic{
+            margin: 20px 110px;
+        }
+        .edit-btn{
+            margin: 40px 0px -20px 330px;
+        }
+    }
+    .content{
+        margin: 1rem;
+        font-size: 8px;
+        .booking-container{
+            rotate: 90deg;
+            width: 100%;
+            overflow: visible;
+        }
+    }
+}
